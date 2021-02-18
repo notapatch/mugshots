@@ -18,6 +18,7 @@ gem "webpacker", "~> 5.0"
 gem "bootsnap", ">= 1.4.4", require: false
 
 group :development, :test do
+  gem "brakeman"
   gem "byebug", platforms: %i[mri mingw x64_mingw]
   gem "nested_scaffold"
   gem "railroady"
