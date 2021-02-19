@@ -10,7 +10,8 @@
     "turbolinks": "^5.2.0"
   },
   "scripts": {
-    "lint": "concurrently \"yarn:lint:*\""
+    "lint": "concurrently \"yarn:lint:*\"",
+    "lint:js": "standard 'app/javascript' --fix"
   },
   "version": "0.1.0",
   "devDependencies": {
