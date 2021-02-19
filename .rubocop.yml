@@ -1,0 +1,24 @@
+# .rubocop.yml
+inherit_mode:
+  merge:
+    - Exclude
+
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - standard/cop/semantic_blocks
+
+inherit_gem:
+  standard: config/base.yml
+
+inherit_from:
+  - .rubocop_rails.yml
+  - .rubocop_rspec.yml
+  - .rubocop_strict.yml
+
+AllCops:
+  TargetRubyVersion: 3.0.0
+  Exclude:
+    - db/schema.rb
+    - db/migrate/**
+    - node_modules/**/*
