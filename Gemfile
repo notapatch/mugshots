@@ -26,6 +26,7 @@ group :development, :test do
   gem "nested_scaffold"
   gem "prosopite"
   gem "railroady"
+  gem "rspec-rails"
   gem "rubocop"
   gem "rubocop-performance"
   gem "rubocop-rails"
